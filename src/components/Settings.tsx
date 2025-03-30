@@ -27,13 +27,13 @@ export default function Settings() {
 
   return (
     <div className="w-full max-w-2xl mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-6">Settings</h2>
+      <h2 className="text-2xl font-bold mb-6 text-gray-900">Settings</h2>
       
       <div className="space-y-6">
         {/* Hard Mode Toggle */}
         <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow">
           <div>
-            <h3 className="font-semibold">Hard Mode</h3>
+            <h3 className="font-semibold text-gray-900">Hard Mode</h3>
             <p className="text-sm text-gray-600">Lock your phone until tasks are completed</p>
           </div>
           <button
@@ -50,11 +50,11 @@ export default function Settings() {
 
         {/* Notification Interval */}
         <div className="p-4 bg-white rounded-lg shadow">
-          <h3 className="font-semibold mb-2">Notification Interval</h3>
+          <h3 className="font-semibold mb-2 text-gray-900">Notification Interval</h3>
           <select
             value={notificationInterval}
             onChange={(e) => setNotificationInterval(Number(e.target.value))}
-            className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
           >
             <option value={5}>5 minutes</option>
             <option value={10}>10 minutes</option>
@@ -66,7 +66,7 @@ export default function Settings() {
 
         {/* Custom Roasts */}
         <div className="p-4 bg-white rounded-lg shadow">
-          <h3 className="font-semibold mb-4">Custom Roast Messages</h3>
+          <h3 className="font-semibold mb-4 text-gray-900">Custom Roast Messages</h3>
           
           <form onSubmit={handleAddRoast} className="mb-4">
             <div className="flex gap-2">
@@ -75,7 +75,7 @@ export default function Settings() {
                 value={newRoast}
                 onChange={(e) => setNewRoast(e.target.value)}
                 placeholder="Add a new roast message..."
-                className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500"
               />
               <button
                 type="submit"
@@ -92,7 +92,7 @@ export default function Settings() {
                 key={index}
                 className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
               >
-                <span className="flex-1">{roast}</span>
+                <span className="flex-1 text-gray-900">{roast}</span>
                 <button
                   onClick={() => handleDeleteRoast(index)}
                   className="p-1 text-red-500 hover:text-red-700 focus:outline-none"

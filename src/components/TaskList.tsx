@@ -28,7 +28,7 @@ export default function TaskList() {
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
             placeholder="Add a new task..."
-            className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500"
           />
           <button
             type="submit"
@@ -51,7 +51,7 @@ export default function TaskList() {
               onChange={() => handleTaskClick(task)}
               className="w-5 h-5 rounded border-gray-300 text-blue-500 focus:ring-blue-500"
             />
-            <span className={`flex-1 ${task.completed ? 'line-through text-gray-500' : ''}`}>
+            <span className={`flex-1 text-gray-900 ${task.completed ? 'line-through text-gray-500' : ''}`}>
               {task.title}
             </span>
             <button

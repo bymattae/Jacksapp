@@ -24,7 +24,7 @@ export default function Notification({ message, onClose, onSnooze }: Notificatio
   return (
     <div className="fixed bottom-4 right-4 z-50 animate-slide-up">
       <div className="bg-white p-4 rounded-lg shadow-lg max-w-sm">
-        <p className="text-gray-800 mb-4">{message}</p>
+        <p className="text-gray-900 mb-4">{message}</p>
         <div className="flex gap-2">
           <button
             onClick={() => {
