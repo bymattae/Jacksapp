@@ -1,15 +1,56 @@
-# Ansh & Riley Full-Stack Template
+# Procrastination Tracker
 
-This is a full-stack template project for Software Composers to create  applications with AI.
+A brutal productivity app that detects procrastination, sends roasting notifications, and locks your phone in hard mode until a task is done.
 
-## Getting started
-To create a new project, you go to `/paths`, choose from our list of Paths, and then use Cursor's Composer feature to quickly scaffold your project!
+## Features
 
-You can also edit the Path's prompt template to be whatever you like!
+### To-Do List Tracking
+- Add, edit, and delete tasks
+- Track last interaction time
+- Detect inactivity (configurable interval)
 
-## Technologies used
-This doesn't really matter, but is useful for the AI to understand more about this project. We are using the following technologies
-- React with Next.js 14 App Router
-- TailwindCSS
-- Firebase Auth, Storage, and Database
-- Multiple AI endpoints including OpenAI, Anthropic, and Replicate using Vercel's AI SDK
+### Roast Notifications
+- Randomized brutal push notifications
+- Triggered after set inactivity period
+- Customizable roast messages
+
+### Hard Mode
+- Optional toggle to lock the interface
+- Disables all non-productive actions
+- Unlocks only after completing a task
+
+### Settings
+- Configure notification intervals
+- Enable/disable hard mode
+- Customize roast messages
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Tech Stack
+
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Zustand (State Management)
+
+## Development
+
+The app is structured as follows:
+- `/src/app` - Main application pages and API routes
+- `/src/components` - Reusable React components
+- `/src/lib` - Utilities, hooks, and state management
+
+## License
+
+MIT
